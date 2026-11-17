@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package greet;
+
+service Greeter {
+  rpc Login (LoginRequest) returns (LoginReply);
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc ReajustarSalario (ReajusteRequest) returns (ReajusteReply);
+  rpc CadastrarCliente (CadastroRequest) returns (CadastroReply);
+  rpc BuscarCliente (BuscaClienteRequest) returns (BuscaClienteReply);
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
+
+message LoginRequest {
+  string usuario = 1;
+  string senha = 2;
+}
+
+message LoginReply {
+  bool sucesso = 1;
+  string token = 2;
+  string mensagem = 3;
+}
+
+// Ajustado para receber o ID e o percentual
+message ReajusteRequest {
+  int32 identificador = 1;
+  double percentual_reajuste = 2;
+}
+
+message ReajusteReply {
+  double salario_atualizado = 1;
+  string mensagem = 2;
+}
+
+message CadastroRequest {
+  string nome_completo = 1;
+  string data_nascimento = 2;
+  string sexo = 3;
+  string endereco = 4;
+  int32 situacao = 5;
+  double salario = 6; // Novo campo de salário
+}
+
+message CadastroReply {
+  string mensagem = 1;
+  int32 identificador = 2;
+}
+
+message BuscaClienteRequest {
+  int32 identificador = 1;
+}
+
+message BuscaClienteReply {
+  bool encontrado = 1;
+  string mensagem = 2;
+  string nome_completo = 3;
+  string data_nascimento = 4;
+  string sexo = 5;
+  string endereco = 6;
+  int32 situacao = 7;
+  double salario = 8; // Retorna o salário na consulta
+}
