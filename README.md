@@ -2,6 +2,20 @@
 
 > Um projeto moderno, robusto e de nível corporativo desenvolvido em **.NET 9**, implementando os principais padrões de arquitetura limpa, segurança avançada de APIs, resiliência e boas práticas de engenharia de software para serviços gRPC.
 
+> ### 🌐 O que é o gRPC?
+> **gRPC** é um framework de código aberto de alta performance criado pelo Google. Ele utiliza o protocolo **HTTP/2** e o **Protocol Buffers (Protobuf)** — um mecanismo onde os dados são compactados em formato **binário** e estritamente tipados por meio de contratos definidos em arquivos `.proto`. 
+> 
+> Ele serve para conectar sistemas e microsserviços de forma ultrarrápida, utilizando contratos rígidos e máxima economia de rede.
+
+---
+
+### 🏢 Na Prática Corporativa
+
+Em ambientes de alta volumetria — como serviços bancários, plataformas de streaming ou grandes sistemas corporativos de RH — aplicações precisam se comunicar milhares de vezes por segundo:
+
+* **O Problema do JSON:** Trocar dados em texto puro (JSON) gera sobrecarga de processamento e payloads pesados.
+* **A Solução gRPC:** Traduz as chamadas para pacotes binários compactos que trafegam com latência mínima, garantindo que cliente e servidor falem exatamente a mesma língua, sem margem para ambiguidade.
+
 ---
 
 ## 🛠️ Tecnologias e Stack Tecnológica
