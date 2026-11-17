@@ -1,6 +1,6 @@
 # 🚀 Enterprise gRPC .NET 9 Architecture
 
-> Um projeto moderno, robusto e de nível corporativo desenvolvido em **.NET 9**, implementando os principais padrões de arquitetura limpa, segurança avançada de APIs, resiliência e boas práticas de engenharia de software para serviços gRPC.
+Um projeto moderno, robusto e de nível corporativo desenvolvido em **.NET 9**, implementando os principais padrões de arquitetura limpa, segurança avançada de APIs, resiliência e boas práticas de engenharia de software para serviços gRPC.
 
 > ### 🌐 O que é o gRPC?
 > **gRPC** é um framework de código aberto de alta performance criado pelo Google. Ele utiliza o protocolo **HTTP/2** e o **Protocol Buffers (Protobuf)** — um mecanismo onde os dados são compactados em formato **binário** e estritamente tipados por meio de contratos definidos em arquivos `.proto`. 
